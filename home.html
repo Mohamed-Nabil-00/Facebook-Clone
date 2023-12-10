@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.3.2-dist/css/bootstrap.min.css.map"
+    />
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="icon" type="image/x-icon" href="facebook-icon.png">
+  </head>
+  <body>
+
+    <!-- Start Search Bar -->
+    <nav class="navbar search-bar">
+      <div class="container">
+        <a class="navbar-brand"><i class="fa-solid fa-camera text-white fs-4 mt-2"></i></a>
+        <form class="flex-grow-1 d-flex flex-row-reverse ms-2 me-4 d-flex align-items-center border-bottom border-white" role="search">
+          <input class="main-search ps-2 pb-2 border border-0 flex-grow-1 text-white caret-white" type="text" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass text-white"></i>
+        </form>
+        <a href="messenger.html"><i role="button" class="fa-brands fa-facebook-messenger mt-2 text-white fs-4"></i></a>
+      </div>
+    </nav>
+    <!-- End Search Bar -->
+
+    <!-- Start Main Bar -->
+    <nav class="navbar main-bar text-white d-flex justify-content-between ps-2 pe-2 ms-2 me-2 fs-4">
+      <div class="container">
+        <a href="home.html" class="active border-bottom border-4 border-primary px-1">
+          <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="notification.html">
+          <i class="fa-regular fa-bell"></i>
+        </a>
+        <a href="friends.html">
+          <i class="fa-solid fa-user-group"></i>
+        </a>
+        <a href="profile.html">
+          <i class="fa-regular fa-circle-user"></i>
+        </a>
+        <a href="setting.html">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+    <!-- End Main Bar -->
+
+    <!-- Start Post Part -->
+    <div class="share-post pt-3 pb-3">
+      <div class="container d-flex align-items-center">
+        <a href="profile.html" class="profile-img rounded-circle"></a>
+        <input class="rounded-pill flex-grow-1 ms-3 me-3 p-1" type="text">
+        <i role="button" class="fa-regular fa-image fs-3"></i>
+      </div>
+    </div>
+    <!-- End Post Part -->
+
+    <!-- Start Stories Part -->
+    <div class="stories pt-3 pb-4">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="person rounded-circle position-relative">
+          <i class="fa-solid fa-plus position-absolute translate-middle p-1 bg-primary rounded-circle text-white"></i>
+        </div>
+        <div class="person active rounded-circle position-relative">
+          <div class="rounded-circle position-absolute border border-white bg-success"></div>
+        </div>
+        <div class="person active rounded-circle position-relative">
+          <div class="rounded-circle position-absolute border border-white bg-success"></div>
+        </div>
+        <div class="person active rounded-circle position-relative">
+          <div class="rounded-circle position-absolute border border-white bg-success"></div>
+        </div>
+        <div class="person active rounded-circle position-relative d-none d-sm-block">
+          <div class="rounded-circle position-absolute border border-white bg-success"></div>
+        </div>
+        <div class="person active rounded-circle position-relative d-none d-sm-block">
+          <div class="rounded-circle position-absolute border border-white bg-success"></div>
+        </div>
+        <div class="person active rounded-circle position-relative d-none d-md-block">
+          <div class="rounded-circle position-absolute border border-white bg-success"></div>
+        </div>
+        <div class="person active rounded-circle position-relative d-none d-md-block">
+          <div class="rounded-circle position-absolute border border-white bg-success"></div>
+        </div>
+        <div class="person active rounded-circle position-relative d-none d-lg-block">
+          <div class="rounded-circle position-absolute border border-white bg-success"></div>
+        </div>
+        <div class="person active rounded-circle position-relative d-none d-lg-block">
+          <div class="rounded-circle position-absolute border border-white bg-success"></div>
+        </div>
+      </div>
+    </div>
+    <!-- End Stories Part -->
+
+    <!-- Start Posts -->
+    <div class="post pt-2 pb-2">
+      <div class="container">
+        <div class="info d-flex align-items-center">
+          <div class="poster rounded-circle"></div>
+          <div class="poster-details flex-grow-1 ms-3">
+            <div class="mb-2"></div>
+            <div></div>
+          </div>
+          <i class="fa-solid fa-ellipsis fs-5"></i>
+        </div>
+        <div class="post-content">
+          <div class="mt-4 mb-3 width-100"></div>
+          <div></div>
+        </div>
+        <div class="post-img width-100 rounded mt-3 mb-2"></div>
+        <div class="reacts">
+          <i class="fa-solid fa-thumbs-up text-white bg-primary p-1 rounded-circle position-relative z-3"></i>
+          <i class="fa-solid fa-heart text-white bg-danger p-1 rounded-circle"></i>
+        </div>
+        <div class="reach pt-2 mt-2 d-flex align-items-center justify-content-around">
+          <div class="option" role="button">
+            <i class="fa-solid fa-thumbs-up"></i>
+            <span class="me-1">Like</span>
+          </div>
+          <div class="option" role="button">
+            <i class="fa-solid fa-message"></i>
+            <span class="me-1">Comment</span>
+          </div>
+          <div class="option" role="button">
+            <i class="fa-solid fa-share"></i>
+            <span class="me-1">Share</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="post pt-2 pb-2">
+      <div class="container">
+        <div class="info d-flex align-items-center">
+          <div class="poster rounded-circle"></div>
+          <div class="poster-details flex-grow-1 ms-3">
+            <div class="mb-2"></div>
+            <div></div>
+          </div>
+          <i class="fa-solid fa-ellipsis fs-5"></i>
+        </div>
+        <div class="post-content">
+          <div class="mt-4 mb-3 width-100"></div>
+          <div></div>
+        </div>
+        <div class="post-img width-100 rounded mt-3 mb-2"></div>
+        <div class="reacts">
+          <i class="fa-solid fa-thumbs-up text-white bg-primary p-1 rounded-circle position-relative z-3"></i>
+          <i class="fa-solid fa-heart text-white bg-danger p-1 rounded-circle"></i>
+        </div>
+        <div class="reach pt-2 mt-2 d-flex align-items-center justify-content-around">
+          <div class="option" role="button">
+            <i class="fa-solid fa-thumbs-up"></i>
+            <span class="me-1">Like</span>
+          </div>
+          <div class="option" role="button">
+            <i class="fa-solid fa-message"></i>
+            <span class="me-1">Comment</span>
+          </div>
+          <div class="option" role="button">
+            <i class="fa-solid fa-share"></i>
+            <span class="me-1">Share</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="post pt-2 pb-2 mb-2">
+      <div class="container">
+        <div class="info d-flex align-items-center">
+          <div class="poster rounded-circle"></div>
+          <div class="poster-details flex-grow-1 ms-3">
+            <div class="mb-2"></div>
+            <div></div>
+          </div>
+          <i class="fa-solid fa-ellipsis fs-5"></i>
+        </div>
+        <div class="post-content">
+          <div class="mt-4 mb-3 width-100"></div>
+          <div></div>
+        </div>
+        <div class="post-img width-100 rounded mt-3 mb-2"></div>
+        <div class="reacts">
+          <i class="fa-solid fa-thumbs-up text-white bg-primary p-1 rounded-circle position-relative z-3"></i>
+          <i class="fa-solid fa-heart text-white bg-danger p-1 rounded-circle"></i>
+        </div>
+        <div class="reach pt-2 mt-2 d-flex align-items-center justify-content-around">
+          <div class="option" role="button">
+            <i class="fa-solid fa-thumbs-up"></i>
+            <span class="me-1">Like</span>
+          </div>
+          <div class="option" role="button">
+            <i class="fa-solid fa-message"></i>
+            <span class="me-1">Comment</span>
+          </div>
+          <div class="option" role="button">
+            <i class="fa-solid fa-share"></i>
+            <span class="me-1">Share</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Posts -->
+
+    <script src="bootstrap-5.3.2-dist/js/all.min.js"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js.map"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

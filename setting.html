@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.3.2-dist/css/bootstrap.min.css.map"
+    />
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="icon" type="image/x-icon" href="facebook-icon.png">
+  </head>
+  <body>
+
+    <!-- Start Main Bar -->
+    <nav class="navbar main-bar text-white d-flex justify-content-between ps-2 pe-2 ms-2 me-2 fs-4">
+      <div class="container">
+        <a href="home.html">
+          <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="notification.html">
+          <i class="fa-solid fa-bell"></i>
+        </a>
+        <a href="friends.html">
+          <i class="fa-solid fa-user-group"></i>
+        </a>
+        <a href="profile.html">
+          <i class="fa-regular fa-circle-user"></i>
+        </a>
+        <a href="setting.html" class="active border-bottom border-4 border-primary px-1">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+    <!-- End Main Bar -->
+
+    <div class="container">
+      <!-- Start Setting Control -->
+      <div class="d-flex align-items-center justify-content-between py-2 fs-5 fw-bold text-black-50">
+        <p class="fs-3 m-0">Menu</p>
+        <div class="d-flex align-items-center gap-4">
+          <i class="fa-solid fa-gear"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+      <div class="switch-acc rounded bg-body-secondary p-3">
+        <div class="current-acc d-flex align-items-center justify-content-between">
+          <div class="person rounded-circle"></div>
+          <i class="fa-solid fa-angle-down p-2 rounded-circle fs-5 text-white" role="button"></i>
+        </div>
+      </div>
+      <!-- End Setting Control -->
+
+      <!-- Start Other Things -->
+      <p class="fw-bold mt-2">Your shortcuts</p>
+      <div class="shortcuts d-flex align-items-center">
+        <div class="person rounded-circle position-relative">
+          <i class="fa-solid fa-user-group position-absolute text-white p-1 rounded-circle"></i>
+        </div>
+        <div class="person rounded-circle ms-2 position-relative">
+          <i class="fa-solid fa-user-group position-absolute text-white p-1 rounded-circle"></i>
+        </div>
+        <div class="person rounded-circle ms-2 position-relative">
+          <i class="fa-solid fa-user-group position-absolute text-white p-1 rounded-circle"></i>
+        </div>
+      </div>
+      <div class="setting-slums my-3 gap-2 row row-cols-2 mx-1">
+        <div class="col text-black-50 rounded p-3">
+          <i class="fa-solid fa-comment-dots"></i>
+          <p class="fw-bold m-0">Feeds</p>
+        </div>
+        <div class="col text-black-50 rounded p-3">
+          <i class="fa-solid fa-user-group"></i>
+          <p class="fw-bold m-0">Friends</p>
+        </div>
+        <div class="col text-black-50 rounded p-3">
+          <i class="fa-solid fa-user-group"></i>
+          <p class="fw-bold m-0">Explore People</p>
+        </div>
+        <div class="col text-black-50 rounded p-3">
+          <i class="fa-solid fa-users"></i>
+          <p class="fw-bold m-0">Groups</p>
+        </div>
+        <div class="col text-black-50 rounded p-3">
+          <i class="fa-solid fa-shop"></i>
+          <p class="fw-bold m-0">Marketplace</p>
+        </div>
+        <div class="col text-black-50 rounded p-3">
+          <i class="fa-solid fa-clock"></i>
+          <p class="fw-bold m-0">Memories</p>
+        </div>
+        <div class="col text-black-50 rounded p-3">
+          <i class="fa-solid fa-bookmark"></i>
+          <p class="fw-bold m-0">Saved</p>
+        </div>
+        <div class="col text-black-50 rounded p-3">
+          <i class="fa-solid fa-flag"></i>
+          <p class="fw-bold m-0">Pages</p>
+        </div>
+        <div class="col-12 rounded text-black-50 fw-bold p-1 text-center" role="button">See more</div>
+      </div>
+      <div class="other-setting mb-2 d-flex align-items-center text-black-50 bg-body-secondary p-3 rounded">
+        <i class="fa-solid fa-circle-question fs-4"></i>
+        <p class="flex-grow-1 m-0 fw-bold ms-3">Help & Support</p>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <div class="other-setting mb-2 d-flex align-items-center text-black-50 bg-body-secondary p-3 rounded">
+        <i class="fa-solid fa-gear fs-4"></i>
+        <p class="flex-grow-1 m-0 fw-bold ms-3">Setting & privacy</p>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <div class="other-setting mb-2 d-flex align-items-center text-black-50 bg-body-secondary p-3 rounded">
+        <i class="fa-solid fa-cubes-stacked fs-4"></i>
+        <p class="flex-grow-1 m-0 fw-bold ms-3">Professional Access</p>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <div class="other-setting mb-3 d-flex align-items-center text-black-50 bg-body-secondary p-3 rounded">
+        <i class="fa-solid fa-list fs-4"></i>
+        <p class="flex-grow-1 m-0 fw-bold ms-3">Also from Meta</p>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <div class="logout text-center p-2 fw-bold text-black-50 rounded mb-3">Log out</div>
+      <!-- End Other Things -->
+    </div>
+
+    <script src="bootstrap-5.3.2-dist/js/all.min.js"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js.map"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

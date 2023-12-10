@@ -1,0 +1,428 @@
+/* Start General Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #3d5a96;
+  --secondary-color: #314678;
+  --example-color: #b1b9cc;
+  --example-two-color: #c6cfed;
+  --not-active-color: #8b8b8d;
+  --chat-color: #0581fd;
+  --main-transition: 0.3s;
+}
+body {
+  font-family: sans-serif;
+}
+/* End General Rules */
+
+/* Start Login */
+body.login-body {
+  background-color: var(--main-color);
+  height: 100vh;
+}
+.login-title {
+  margin-bottom: 35px;
+}
+body.login-body form input {
+  width: 325px;
+}
+body.login-body form input:focus {
+  border: 2px solid white;
+  outline: 2px solid var(--secondary-color);
+}
+body.login-body form input[type="submit"] {
+  background-color: var(--secondary-color);
+}
+body.login-body footer {
+  margin-top: 200px;
+}
+/* End Login */
+
+/* Start Components */
+.search-bar {
+  background-color: var(--main-color);
+  box-shadow: 0 3px 3px 0 #ddd9d9;
+}
+.search-bar .main-search {
+  border-bottom: 1px solid white;
+  background-color: var(--main-color);
+}
+.search-bar .main-search:focus {
+  outline: none;
+}
+.search-bar .main-search + svg {
+  transition: var(--main-transition);
+}
+.search-bar .main-search:focus + svg {
+  opacity: 0;
+}
+.main-bar {
+  border-bottom: 1px solid var(--example-color);
+}
+.main-bar a {
+  color: var(--not-active-color);
+  transition: var(--main-transition);
+}
+.main-bar a.active {
+  color: var(--main-color);
+}
+.main-bar a:not(.active):hover {
+  color: var(--main-color);
+}
+/* End Components */
+
+/* Start Home Page */
+.share-post {
+  border-bottom: 3px solid var(--example-color);
+}
+.share-post .profile-img,
+.chat-bar .person {
+  background-color: var(--example-two-color);
+  width: 40px;
+  height: 40px;
+  transition: var(--main-transition);
+}
+.share-post .profile-img:hover {
+  background-color: var(--not-active-color);
+}
+.share-post input {
+  border: 2px solid var(--example-color);
+  transition: var(--main-transition);
+}
+.share-post input:focus {
+  border: none;
+  outline: 2px solid var(--not-active-color);
+}
+.share-post svg {
+  color: var(--example-color);
+  transition: var(--main-transition);
+}
+.share-post svg:hover {
+  color: var(--not-active-color);
+}
+.stories .person {
+  width: 65px;
+  height: 65px;
+  background-color: var(--example-color);
+}
+.stories .person.active {
+  border: 1px solid var(--not-active-color);
+}
+.stories .person::after {
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  width: 30px;
+  height: 4px;
+  background-color: var(--example-color);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.stories .person svg {
+  top: 6px;
+  left: 85%;
+}
+.stories.messenger .person svg {
+  left: 70%;
+  top: 60%;
+}
+.stories .person div {
+  width: 24px;
+  height: 24px;
+  bottom: 2px;
+  left: 67%;
+}
+.post {
+  border-top: 3px solid var(--example-color);
+}
+.post .poster {
+  background-color: var(--example-two-color);
+  width: 42px;
+  height: 42px;
+}
+.post .poster-details div:first-of-type {
+  background-color: var(--example-color);
+  border-radius: 4px;
+  width: 120px;
+  height: 9px;
+}
+.post .poster-details div:last-of-type {
+  background-color: var(--example-color);
+  border-radius: 8px;
+  width: 65px;
+  height: 6px;
+}
+.post .poster-details svg {
+  color: var(--not-active-color);
+}
+.post .post-content div:first-of-type {
+  background-color: var(--example-color);
+  border-radius: 4px;
+  height: 8px;
+}
+.post .post-content div:last-of-type {
+  background-color: var(--example-color);
+  border-radius: 4px;
+  width: 40%;
+  height: 8px;
+}
+.post .post-img {
+  height: 235px;
+  background-color: var(--example-color);
+}
+.post .reacts svg {
+  font-size: .6rem;
+}
+.post .reacts svg:last-of-type {
+  margin-left: -10px;
+}
+.post .reach {
+  border-top: 1px solid var(--example-color);
+  color: var(--not-active-color);
+}
+.post .reach .option {
+  transition: var(--main-transition);
+}
+.post .reach .option:hover {
+  color: var(--secondary-color);
+}
+/* End Home Page */
+
+/* Start Notification Page */
+.notification {
+  border-top: 1px solid var(--example-color);
+}
+.notification .person {
+  width: 64px;
+  height: 64px;
+  background-color: var(--example-two-color);
+}
+.notification .person span {
+  width: 26px;
+  height: 26px;
+  left: 63%;
+  bottom: 4%;
+}
+.notification .person-notf div {
+  height: 6px;
+  background-color: var(--example-color);
+}
+.notification .info > svg {
+  color: var(--not-active-color);
+}
+/* End Notification Page */
+
+/* Start Friends Page */
+.friends-search .search,
+.requests .request-info p:first-of-type,
+.may-know p {
+  color: #606061;
+}
+.friends-search .row .col {
+  background-color: var(--not-active-color);
+}
+.requests,
+.may-know {
+  border-top: 1px solid var(--example-color);
+}
+.requests .person {
+  width: 82px;
+  height: 82px;
+  background-color: var(--example-color);
+}
+.requests .requester > div:first-of-type {
+  width: 35%;
+  height: 8px;
+  background-color: var(--example-color);
+}
+.requests .requester span:not(:last-of-type) {
+  width: 16px;
+  height: 16px;
+  background-color: var(--example-color);
+  border: 1px solid var(--not-active-color);
+}
+.requests .requester span:nth-child(2) {
+  left: -6px;
+}
+.requests .row .col {
+  background-color: var(--not-active-color);
+}
+/* End Friends Page */
+
+/* Start Profile Page */
+.profile-bg {
+  height: 240px;
+  background-color: var(--example-color);
+}
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  background-color: var(--example-two-color);
+  margin-top: -35px;
+}
+.chat-with,
+.profile-info {
+  border: 1px solid var(--not-active-color);
+}
+.chat-with svg {
+  color: var(--example-color);
+  transition: var(--main-transition);
+}
+.chat-with svg:hover {
+  color: var(--main-color);
+}
+.profile-info p {
+  color: var(--not-active-color);
+  transition: var(--main-transition);
+}
+.profile-info p:hover,
+.profile-info p.active {
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
+.gallery .col {
+  height: 150px;
+  background-color: var(--example-color);
+}
+/* End Profile Page */
+
+/* Start Setting Page */
+.switch-acc {
+  border-radius: 25px;
+}
+.switch-acc .person,
+.shortcuts .person {
+  width: 64px;
+  height: 64px;
+  background-color: var(--example-color);
+}
+.shortcuts .person svg {
+  bottom: 5px;
+  left: 65%;
+  font-size: 11px;
+  background-color: var(--not-active-color);
+}
+.switch-acc .current-acc svg {
+  background-color: var(--example-color);
+}
+.setting-slums .col {
+  width: calc((100% / 2) - 4px);
+  background-color: var(--example-two-color);
+}
+.setting-slums .col-12 {
+  background-color: var(--example-two-color);
+}
+.setting-slums .col svg {
+  color: var(--main-color);
+}
+.logout {
+  background-color: var(--example-two-color);
+}
+/* End Setting Page */
+
+/* Start Messenger Page */
+.messenger-search,
+.messenger-categories {
+  border-bottom: 1px solid var(--example-color);
+}
+.messenger-search .person {
+  width: 24px;
+  height: 24px;
+  background-color: var(--example-two-color);
+  transition: var(--main-transition);
+}
+.messenger-search .person:hover {
+  background-color: var(--example-color);
+}
+.messenger-categories p.active::after,
+.messenger-categories p:hover::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  background-color: var(--example-color);
+}
+.chat .chat-avatar {
+  width: 48px;
+  height: 48px;
+  background-color: var(--example-two-color);
+}
+.chat .message div:first-of-type {
+  width: 30%;
+  height: 9px;
+  background-color: var(--not-active-color);
+}
+.chat .message div:last-of-type {
+  width: 15%;
+  height: 6px;
+  background-color: var(--example-color);
+}
+.chat > div > div:last-of-type {
+  width: 20%;
+  height: 5px;
+  background-color: var(--example-two-color);
+}
+.chose-chat {
+  background-color: var(--chat-color);
+  bottom: 25px;
+  right: 5%;
+}
+/* End Messenger Page */
+
+/* Start Chat Page */
+.chat-bar {
+  background-color: var(--chat-color);
+}
+.chat-bar .person-info div:first-of-type {
+  width: 35%;
+  height: 9px;
+}
+.chat-bar .person-info div:last-of-type {
+  width: 20%;
+  height: 6px;
+  background-color: var(--example-two-color);
+}
+.received-width {
+  width: 78%;
+}
+.received-width::before {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--example-two-color);
+  position: absolute;
+  bottom: 0;
+  left: -50px;
+}
+.chat-content .received:nth-of-type(1) {
+  height: 55px;
+}
+.chat-content .received {
+  height: 180px;
+}
+.chat-content .received.last {
+  height: 220px;
+}
+.chat-content .sent {
+  background-color: var(--chat-color);
+  height: 65px;
+}
+.send-message input,
+.send-message input:focus {
+  outline: none;
+  border: 1px solid var(--chat-color);
+}
+.send-message svg {
+  color: var(--chat-color);
+}
+/* End Chat Page */

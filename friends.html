@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notifications</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.3.2-dist/css/bootstrap.min.css.map"
+    />
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="icon" type="image/x-icon" href="facebook-icon.png">
+  </head>
+  <body>
+
+    <!-- Start Main Bar -->
+    <nav class="navbar main-bar text-white d-flex justify-content-between ps-2 pe-2 ms-2 me-2 fs-4">
+      <div class="container">
+        <a href="home.html">
+          <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="notification.html">
+          <i class="fa-solid fa-bell"></i>
+        </a>
+        <a href="friends.html" class="active border-bottom border-4 border-primary px-1">
+          <i class="fa-solid fa-user-group"></i>
+        </a>
+        <a href="profile.html">
+          <i class="fa-regular fa-circle-user"></i>
+        </a>
+        <a href="setting.html">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+    <!-- End Main Bar -->
+
+    <!-- Start Friends Search -->
+    <div class="friends-search py-2 ms-2 me-2">
+      <div class="container">
+        <div class="search d-flex justify-content-between align-items-center fw-bold fs-4">
+          <p>Friends</p>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="row text-white text-center gap-2 pt-1">
+          <div class="col rounded-pill p-2" role="button">Suggestion</div>
+          <div class="col rounded-pill p-2" role="button">Your Friends</div>
+          <div class="col rounded-pill p-2" role="button">Close Friends</div>
+        </div>
+      </div>
+    </div>
+    <!-- End Friends Search -->
+
+    <!-- Start Requests And May Know -->
+    <div class="requests py-3 fs-5">
+      <div class="container">
+        <div class="request-info d-flex align-items-center justify-content-between fw-bold">
+          <p>Friend Requests <span class="text-danger">2</span></p>
+          <p class="text-primary">See all</p>
+        </div>
+      </div>
+      <div class="request ">
+        <div class="container d-flex align-items-center">
+          <div class="person rounded-circle"></div>
+          <div class="requester ms-2 flex-grow-1">
+            <div class="rounded-pill"></div>
+            <div class="d-flex align-items-center mt-1">
+              <span class="rounded-circle d-block"></span>
+              <span class="rounded-circle d-block position-relative z-n1"></span>
+              <span class="fs-6 fw-bold text-black-50">2 Matual friends</span>
+            </div>
+            <div class="row mt-2 ms-1 me-2 fw-bold gap-2">
+              <div class="col p-1 btn bg-primary text-white" role="button">Confirm</div>
+              <div class="col p-1 btn text-white" role="button">Delete</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="may-know pt-3 mt-3">
+        <div class="container">
+          <p class="fs-4 fw-bold">People you may know</p>
+          <div class="d-flex align-items-center">
+            <div class="person rounded-circle"></div>
+            <div class="requester ms-2 flex-grow-1">
+              <div class="rounded-pill"></div>
+              <div class="d-flex align-items-center mt-1">
+                <span class="rounded-circle d-block"></span>
+                <span class="rounded-circle d-block position-relative z-n1"></span>
+                <span class="fs-6 fw-bold text-black-50">4 Matual friends</span>
+              </div>
+              <div class="row mt-2 ms-1 me-2 fw-bold gap-2">
+                <div class="col p-1 btn bg-primary text-white" role="button">Add friend</div>
+                <div class="col p-1 btn text-white" role="button">Remove</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center mt-3">
+            <div class="person rounded-circle"></div>
+            <div class="requester ms-2 flex-grow-1">
+              <div class="rounded-pill"></div>
+              <div class="d-flex align-items-center mt-1">
+                <span class="rounded-circle d-block"></span>
+                <span class="rounded-circle d-block position-relative z-n1"></span>
+                <span class="fs-6 fw-bold text-black-50">18 Matual friends</span>
+              </div>
+              <div class="row mt-2 ms-1 me-2 fw-bold gap-2">
+                <div class="col p-1 btn bg-primary text-white" role="button">Add friend</div>
+                <div class="col p-1 btn text-white" role="button">Remove</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center mt-3">
+            <div class="person rounded-circle"></div>
+            <div class="requester ms-2 flex-grow-1">
+              <div class="rounded-pill"></div>
+              <div class="d-flex align-items-center mt-1">
+                <span class="rounded-circle d-block"></span>
+
+                <span class="fs-6 fw-bold text-black-50">1 Matual friends</span>
+              </div>
+              <div class="row mt-2 ms-1 me-2 fw-bold gap-2">
+                <div class="col p-1 btn bg-primary text-white" role="button">Add friend</div>
+                <div class="col p-1 btn text-white" role="button">Remove</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center mt-3">
+            <div class="person rounded-circle"></div>
+            <div class="requester ms-2 flex-grow-1">
+              <div class="rounded-pill"></div>
+              <div class="d-flex align-items-center mt-1">
+                <span class="rounded-circle d-block"></span>
+                <span class="rounded-circle d-block position-relative z-n1"></span>
+                <span class="fs-6 fw-bold text-black-50">30 Matual friends</span>
+              </div>
+              <div class="row mt-2 ms-1 me-2 fw-bold gap-2">
+                <div class="col p-1 btn bg-primary text-white" role="button">Add friend</div>
+                <div class="col p-1 btn text-white" role="button">Remove</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center mt-3">
+            <div class="person rounded-circle"></div>
+            <div class="requester ms-2 flex-grow-1">
+              <div class="rounded-pill"></div>
+              <div class="d-flex align-items-center mt-1">
+                <span class="rounded-circle d-block"></span>
+                <span class="rounded-circle d-block position-relative z-n1"></span>
+                <span class="fs-6 fw-bold text-black-50">11 Matual friends</span>
+              </div>
+              <div class="row mt-2 ms-1 me-2 fw-bold gap-2">
+                <div class="col p-1 btn bg-primary text-white" role="button">Add friend</div>
+                <div class="col p-1 btn text-white" role="button">Remove</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center mt-3 mb-2">
+            <div class="person rounded-circle"></div>
+            <div class="requester ms-2 flex-grow-1">
+              <div class="rounded-pill"></div>
+              <div class="d-flex align-items-center mt-1">
+                <span class="rounded-circle d-block"></span>
+                <span class="rounded-circle d-block position-relative z-n1"></span>
+                <span class="fs-6 fw-bold text-black-50">2 Matual friends</span>
+              </div>
+              <div class="row mt-2 ms-1 me-2 fw-bold gap-2">
+                <div class="col p-1 btn bg-primary text-white" role="button">Add friend</div>
+                <div class="col p-1 btn text-white" role="button">Remove</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End Requests And May Know -->
+
+    <script src="bootstrap-5.3.2-dist/js/all.min.js"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js.map"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
